@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container clearfix">
+      <header class="main-header">
         <nav class="main-navigation">
-          <a class="logo"><img src="img/logo.svg" alt="Логотип Glaccy" width="154" height="64"></a>
+          <a class="main-navigation__logo"><img src="img/logo.svg" alt="Логотип Glaccy" width="154" height="64"></a>
           <ul class="main-navigation__list">
             <li><a class="navigation" href="catalog.html">Каталог</a></li>
             <li><a class="navigation" href="#">Доставка и оплата</a></li>
-            <li><a class="navigation" href="#">О компании</a></li>
+            <li><a class="navigation" href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -27,8 +27,8 @@
           <span>С 10 до 20, ежедневно</span>
           <span class="phone">8 812 450-25-25</span>
         </div>
-      </div>
-    </header>
+      </header>
+    </div>
     <main class="container">
       <div class="gallery">
         <figure class="gallery-content">
@@ -39,19 +39,19 @@
         <button class="btn-gallery" type="button"></button>
         <button class="order-gallery" type="submit"></button>
       </div>
-      <section class="promo">
-        <article>
+      <section class="promo clearfix">
+        <article class="promo-raspberries">
           <h2 class="promo__title">Малинка даром!</h2>
           <p class="promo__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="promo__btn" href="#">Хочу варенье!</a>
         </article>
-        <article>
+        <article class="promo-chocolate">
           <h2 class="promo__title">Шоколадки даром!</h2>
           <p class="promo__description">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="promo__btn" href="#">Хочу шоколадки!</a>
         </article>
       </section>
-      <section class="catalog">
+      <section class="catalog clearfix">
         <article class="item">
           <img src="img/ice-orange.png" alt="Апельсиновое" width="267" height="267">
           <span class="item-price">310 ₽/кг</span>
@@ -77,67 +77,75 @@
           <a class="btn" href="#">Быстрый просмотр</a>
         </article>
       </section>
-      <article class="about">
+      <article class="about clearfix">
         <p class="about__title"><b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
-        <div class="features">
-          <img src="#" alt="Мороженое" width="" height="">
-          <p>Все наше мороженое изготавливается на собственном производстве,
-            с использованием современного оборудования и проверенных временем технологий.</p>
+        <div class="features-1block">
+          <div class="features">
+            <img src="#" alt="Мороженое" width="" height="">
+            <p>Все наше мороженое изготавливается на собственном производстве,
+              с использованием современного оборудования и проверенных временем технологий.</p>
+          </div>
+          <div class="features">
+            <img src="#" alt="Лист" width="" height="">
+            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+          </div>
         </div>
-        <div class="features">
-          <img src="#" alt="Лист" width="" height="">
-          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        </div>
-        <div class="features">
-          <img src="#" alt="Корова" width="" height="">
-          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
-            с которыми нас связывает долговременное сотрудничество.</p>
-        </div>
-        <div class="features">
-          <img src="#" alt="Температура" width="" height="">
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <div class="features-2block">
+          <div class="features">
+            <img src="#" alt="Корова" width="" height="">
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.</p>
+          </div>
+          <div class="features">
+            <img src="#" alt="Температура" width="" height="">
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+          </div>
         </div>
       </article>
-      <article class="blog">
-        <p class="blog__new">Новое в нашем блоге</p>
-        <p class="blog__title">10  способов сервировки фруктовых щербетов к столу</p>
-      </article>
-      <article class="subscribe">
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-          Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-          <form action="#" method="get">
-            <input type="text" name="email" value="" placeholder="Электронная почта">
-            <button class="btn" type="submit">Отправить</button>
-          </form>
-      </article>
-      <article class="map">
-        <img src="img/map.jpg" alt="Карта" width="1200" height="430">
-        <div class="contacts">
+      <div class="news clearfix">
+        <article class="blog">
+          <p class="blog__new">Новое в нашем блоге</p>
+          <p class="blog__title">10  способов сервировки фруктовых щербетов к столу</p>
+        </article>
+        <article class="subscribe">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+            <form action="#" method="get">
+              <input type="text" name="email" value="" placeholder="Электронная почта">
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+        </article>
+      </div>
+      <article class="contacts">
+        <div class="map">
+          <img src="img/map.jpg" alt="Карта" width="1200" height="430">
+        </div>
+        <div class="contacts-text">
           <p>
             Адрес главного офиса и офлайн магазина:
-              <span class="contacts__main">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+              <span class="contacts-text__main">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             Для заказов по телефону:
-              <span class="contacts__main">8 812 450-25-25</span>
+              <span class="contacts-text__main">8 812 450-25-25</span>
             (с 10 до 20 ежедневно)
           </p>
           <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </article>
     </main>
-    <footer class="footer">
-      <section class="footer__social">
+    <footer class="footer container clearfix">
+      <section class="footer-social">
         <a class="social-btn social-btn-tw" href="#">Твиттер</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </section>
-      <section class="footer__navigation">
-        <a class="footer__navigation__info-dealer" href="#"><img src="#" alt="Сердечко" width="" height="">Для поставщиков</a>
-        <a class="footer__navigation__info" href="#">О производстве</a>
-        <a class="footer__navigation__info" href="#">Наши документы</a>
-        <a class="footer__navigation__info" href="#">Экологические стандарты</a>
+      <section class="footer-navigation">
+        <a class="footer-navigation__info-dealer" href="#"><img src="#" alt="Сердечко" width="" height="">Для поставщиков</a>
+        <a class="footer-navigation__info" href="#">О производстве</a>
+        <a class="footer-navigation__info" href="#">Наши документы</a>
+        <a class="footer-navigation__info" href="#">Экологические стандарты</a>
       </section>
       <section class="footer-copyright">
         <span>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a> © 2016</span>
