@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container clearfix">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <nav class="main-navigation">
           <a class="main-navigation__logo"><img src="img/logo.svg" alt="Логотип Glaccy" width="154" height="64"></a>
           <ul class="main-navigation__list">
@@ -79,26 +79,22 @@
       </section>
       <article class="about clearfix">
         <p class="about__title"><b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b></p>
-        <div class="features-1block">
-          <div class="features">
-            <img src="#" alt="Мороженое" width="" height="">
+        <div class="features">
+          <div class="features-content">
             <p>Все наше мороженое изготавливается на собственном производстве,
               с использованием современного оборудования и проверенных временем технологий.</p>
           </div>
-          <div class="features">
-            <img src="#" alt="Лист" width="" height="">
+          <div class="features-content">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
               Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </div>
         </div>
-        <div class="features-2block">
-          <div class="features">
-            <img src="#" alt="Корова" width="" height="">
+        <div class="features">
+          <div class="features-content">
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
               с которыми нас связывает долговременное сотрудничество.</p>
           </div>
-          <div class="features">
-            <img src="#" alt="Температура" width="" height="">
+          <div class="features-content">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
               который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </div>
@@ -141,11 +137,15 @@
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
       </section>
-      <section class="footer-navigation">
-        <a class="footer-navigation__info-dealer" href="#"><img src="#" alt="Сердечко" width="" height="">Для поставщиков</a>
-        <a class="footer-navigation__info" href="#">О производстве</a>
-        <a class="footer-navigation__info" href="#">Наши документы</a>
-        <a class="footer-navigation__info" href="#">Экологические стандарты</a>
+      <section class="footer-navigation clearfix">
+        <div class="footer-navigation__block">
+          <a class="footer-navigation__block-info-dealer" href="#">Для поставщиков</a>
+          <a class="footer-navigation__block-info" href="#">О производстве</a>
+        </div>
+        <div class="footer-navigation__block">
+          <a class="footer-navigation__block-info" href="#">Наши документы</a>
+          <a class="footer-navigation__block-info" href="#">Экологические стандарты</a>
+        </div>
       </section>
       <section class="footer-copyright">
         <span>Сделано в <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a> © 2016</span>
