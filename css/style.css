@@ -353,19 +353,21 @@ input:checked ~ .slide1 {
   background: url("../img/bg-lines.png") no-repeat;
 }
 
-.email {
+.email-input {
+  border: none;
   display: inline-block;
-  width: 100px;
+  vertical-align: top;
 }
 
 .email-input input {
+  width: 368px;
   padding: 10px;
-  border: 1px solid #34495e;
+  border: 1px solid rgba(178, 178, 178, 0.5);
   border-radius: 5px;
 }
 
-.btn-send {
-  display: inline-block;
+.email-input input:hover {
+  border: 2px solid rgba(178, 178, 178, 0.5);
 }
 
 .contacts {
@@ -406,22 +408,22 @@ input:checked ~ .slide1 {
 .social-btn {
   font-size: 0;
   display: inline-block;
+  vertical-align: top;
   width: 32px;
   height: 32px;
   margin-right: 6px;
-  border:5px solid rgba(255, 255, 255, 0.5);
+  border:5px solid rgba(255,255,255,0.5);
   border-radius: 45px;
   position: relative;
 }
 
 .social-btn:hover {
-  border:5px solid rgba(255, 255, 255, 1);
+  border:5px solid rgba(255,255,255,0.7);
 }
 
 .social-btn:active {
-  border:5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-
+  border:5px solid rgba(255,255,255,0.7);
+  box-shadow: inset 0px 6px 0px 3px rgba(105,105,105,1);
 }
 
 .social-btn:after {
@@ -514,6 +516,23 @@ input:checked ~ .slide1 {
   line-height: 18px;
   text-decoration: underline;
   color: #ffffff;
+}
+
+.navigation:hover {
+  padding: 7px 15px;
+  color: #373737;
+  background: #f8f7f4;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.navigation:active {
+  padding: 7px 15px;
+  color: #373737;
+  background: #ededed;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: inset 0px 2px 0px 0px rgba(105,105,105,1);
 }
 
 .navigation-active {
@@ -761,13 +780,6 @@ input:checked ~ .slide1 {
 
 .subscribe {
   color: #5a5a5a;
-}
-
-.subscribe .btn {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
 }
 
 .contacts {
